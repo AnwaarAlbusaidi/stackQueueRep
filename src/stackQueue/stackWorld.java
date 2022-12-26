@@ -16,18 +16,17 @@ public class stackWorld {
        while(!myStack.empty())
     		   System.out.println(myStack.pop());
        System.out.println();
-       rev();
+       rev("something"); //call the method rev to reverse the word something
        
 	}//End of main class
 	
-   public static void rev()
+   public static void rev(String str)
    {
 	   Stack<Character> revString = new Stack<Character>();
-       String myString = "anwaar";
        
-       for(int i = 0; i < myString.length(); i++)
+       for(int i = 0; i < str.length(); i++)
        {
-    	   revString.push(myString.charAt(i));
+    	   revString.push(str.charAt(i));
        }
        while(!revString.empty())
 		   System.out.print(revString.pop());
